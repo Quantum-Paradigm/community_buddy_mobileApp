@@ -13,27 +13,36 @@ class _MySignInState extends State<MySignIn> {
     return Scaffold(
         body: Container(
       alignment: Alignment.center,
-      child: const SingleChildScrollView(
+      child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Sign In',
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               'Welcome back! Please enter your details.',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text('Continue'),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromRGBO(137, 10, 165, 0.612)),
+            )
           ],
         ),
       ),
