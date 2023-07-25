@@ -129,8 +129,16 @@ class _MySignInState extends State<MySignIn> {
                 ))
               ]),
             ),
+            TextButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 130, 27, 87)),
+              ),
+              child: const Text('Reset Password'),
+            ),
             const SizedBox(
-              height: 10,
+              height: 40,
             ),
             SizedBox(
               height: 36,
