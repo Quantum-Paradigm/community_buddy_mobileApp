@@ -12,6 +12,7 @@ class _MySignInState extends State<MySignIn> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
+      margin: const EdgeInsets.fromLTRB(25, 0, 25, 0),
       alignment: Alignment.center,
       child: SingleChildScrollView(
         child: Column(
@@ -37,11 +38,17 @@ class _MySignInState extends State<MySignIn> {
             const SizedBox(
               height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Continue'),
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromRGBO(137, 10, 165, 0.612)),
+            SizedBox(
+              height: 36,
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text('Continue'),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromRGBO(137, 10, 165, 0.612),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4))),
+              ),
             )
           ],
         ),
