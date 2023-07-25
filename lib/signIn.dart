@@ -24,7 +24,7 @@ class _MySignInState extends State<MySignIn> {
               width: 70,
             ),
             const SizedBox(
-              height: 25,
+              height: 15,
             ),
             const Text(
               'Sign In',
@@ -57,7 +57,14 @@ class _MySignInState extends State<MySignIn> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4))),
               ),
-            )
+            ),
+            TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                shadowColor: const Color.fromRGBO(137, 10, 165, 0.612),
+              ),
+              child: const Text('Sign Up'),
+            ),
           ],
         ),
       ),
