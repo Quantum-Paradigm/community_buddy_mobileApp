@@ -54,7 +54,7 @@ class _MySignUpState extends State<MySignUp> {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 25,
             ),
             const Text(
               'Mobile Number *',
