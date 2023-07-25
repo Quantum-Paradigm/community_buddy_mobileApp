@@ -55,13 +55,17 @@ class _MySignInState extends State<MySignIn> {
             const SizedBox(
               height: 25,
             ),
-            const Text(
-              'Mobile Number *',
-              textAlign: TextAlign.start,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w400,
-              ),
+            const Row(
+              children: [
+                Text(
+                  'Mobile Number *',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 10,
@@ -102,13 +106,17 @@ class _MySignInState extends State<MySignIn> {
             const SizedBox(
               height: 10,
             ),
-            const Text(
-              'Password *',
-              textAlign: TextAlign.start,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w400,
-              ),
+            const Row(
+              children: [
+                Text(
+                  'Password *',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 10,
@@ -129,13 +137,18 @@ class _MySignInState extends State<MySignIn> {
                 ))
               ]),
             ),
-            TextButton(
-              onPressed: () {},
-              style: ButtonStyle(
-                foregroundColor: MaterialStateProperty.all<Color>(
-                    const Color.fromARGB(255, 130, 27, 87)),
-              ),
-              child: const Text('Reset Password'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () {},
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(
+                        const Color.fromARGB(255, 130, 27, 87)),
+                  ),
+                  child: const Text('Reset Password'),
+                ),
+              ],
             ),
             const SizedBox(
               height: 40,

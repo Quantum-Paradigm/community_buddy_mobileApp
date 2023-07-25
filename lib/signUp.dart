@@ -56,13 +56,17 @@ class _MySignUpState extends State<MySignUp> {
             const SizedBox(
               height: 25,
             ),
-            const Text(
-              'Mobile Number *',
-              textAlign: TextAlign.start,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w400,
-              ),
+            const Row(
+              children: [
+                Text(
+                  'Mobile Number *',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 10,
@@ -103,9 +107,6 @@ class _MySignUpState extends State<MySignUp> {
             const SizedBox(
               height: 10,
             ),
-            const SizedBox(
-              height: 10,
-            ),
             Row(children: [
               Checkbox(
                   value: isChecked,
@@ -123,12 +124,6 @@ class _MySignUpState extends State<MySignUp> {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                //     TextField(
-                //   enabled: false,
-                //   decoration: InputDecoration(
-                //       border: InputBorder.none,
-                //       hintText: 'I have read and accept Terms and Conditions',),
-                // )
               )
             ]),
             const SizedBox(
