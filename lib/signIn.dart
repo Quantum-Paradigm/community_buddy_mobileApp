@@ -154,7 +154,9 @@ class _MySignInState extends State<MySignIn> {
               ),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, 'signUp');
+              },
               style: ButtonStyle(
                 foregroundColor: MaterialStateProperty.all<Color>(
                     const Color.fromARGB(255, 130, 27, 87)),
