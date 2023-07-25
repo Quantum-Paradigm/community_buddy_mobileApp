@@ -8,6 +8,15 @@ class MySignIn extends StatefulWidget {
 }
 
 class _MySignInState extends State<MySignIn> {
+  TextEditingController countryCode = TextEditingController();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    countryCode.text = "+92";
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,12 +55,90 @@ class _MySignInState extends State<MySignIn> {
             const SizedBox(
               height: 10,
             ),
+            const Text(
+              'Mobile Number *',
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 55,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 1, color: Colors.grey),
+                  borderRadius: BorderRadius.circular(8)),
+              child: Row(children: [
+                const SizedBox(
+                  width: 10,
+                ),
+                SizedBox(
+                  width: 40,
+                  child: TextField(
+                    controller: countryCode,
+                    decoration: const InputDecoration(border: InputBorder.none),
+                  ),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Text(
+                  "|",
+                  style: TextStyle(fontSize: 33, color: Colors.grey),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Expanded(
+                    child: TextField(
+                  decoration: InputDecoration(
+                      border: InputBorder.none, hintText: '333 XXX XXXX'),
+                ))
+              ]),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Text(
+              'Password *',
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 55,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 1, color: Colors.grey),
+                  borderRadius: BorderRadius.circular(8)),
+              child: const Row(children: [
+                SizedBox(
+                  width: 10,
+                ),
+                Expanded(
+                    child: TextField(
+                  decoration: InputDecoration(
+                      border: InputBorder.none, hintText: 'Password'),
+                ))
+              ]),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
             SizedBox(
               height: 36,
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text('Continue'),
+                // ignore: sort_child_properties_last
+                child: const Text('Continue'),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(137, 10, 165, 0.612),
                     shape: RoundedRectangleBorder(
@@ -60,8 +147,9 @@ class _MySignInState extends State<MySignIn> {
             ),
             TextButton(
               onPressed: () {},
-              style: TextButton.styleFrom(
-                shadowColor: const Color.fromRGBO(137, 10, 165, 0.612),
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(
+                    const Color.fromARGB(255, 130, 27, 87)),
               ),
               child: const Text('Sign Up'),
             ),
