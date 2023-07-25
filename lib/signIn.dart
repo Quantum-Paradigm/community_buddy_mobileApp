@@ -18,6 +18,14 @@ class _MySignInState extends State<MySignIn> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'images/bootstrap-logo-shadow.png',
+              height: 70,
+              width: 70,
+            ),
+            const SizedBox(
+              height: 25,
+            ),
             const Text(
               'Sign In',
               style: TextStyle(
