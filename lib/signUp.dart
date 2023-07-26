@@ -133,7 +133,9 @@ class _MySignUpState extends State<MySignUp> {
               height: 36,
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'otp');
+                },
                 // ignore: sort_child_properties_last
                 child: const Text('Continue'),
                 style: ElevatedButton.styleFrom(
