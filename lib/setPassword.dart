@@ -130,7 +130,9 @@ class _MySetPasswordState extends State<MySetPassword> {
               height: 36,
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'personalInfo');
+                },
                 // ignore: sort_child_properties_last
                 child: const Text('Continue'),
                 style: ElevatedButton.styleFrom(
