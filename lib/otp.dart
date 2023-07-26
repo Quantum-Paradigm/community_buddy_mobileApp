@@ -37,6 +37,7 @@ class _MyOtpState extends State<MyOtp> {
 
     return Scaffold(
         body: Container(
+      color: Colors.white,
       margin: const EdgeInsets.fromLTRB(25, 0, 25, 0),
       alignment: Alignment.center,
       child: SingleChildScrollView(

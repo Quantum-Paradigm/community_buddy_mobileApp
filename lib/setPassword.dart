@@ -12,6 +12,7 @@ class _MySetPasswordState extends State<MySetPassword> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
+      color: Colors.white,
       margin: const EdgeInsets.fromLTRB(25, 0, 25, 0),
       alignment: Alignment.center,
       child: SingleChildScrollView(
