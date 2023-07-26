@@ -134,7 +134,11 @@ class _MySignInState extends State<MySignIn> {
                     child: TextField(
                   decoration: InputDecoration(
                       border: InputBorder.none, hintText: 'Password'),
-                ))
+                )),
+                Icon(Icons.remove_red_eye_outlined),
+                SizedBox(
+                  width: 10,
+                )
               ]),
             ),
             Row(
