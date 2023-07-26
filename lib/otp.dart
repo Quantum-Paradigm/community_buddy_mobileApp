@@ -29,11 +29,11 @@ class _MyOtpState extends State<MyOtp> {
       borderRadius: BorderRadius.circular(8),
     );
 
-    final submittedPinTheme = defaultPinTheme.copyWith(
-      decoration: defaultPinTheme.decoration?.copyWith(
-        color: const Color.fromRGBO(234, 239, 243, 1),
-      ),
-    );
+    // final submittedPinTheme = defaultPinTheme.copyWith(
+    //   decoration: defaultPinTheme.decoration?.copyWith(
+    //     color: const Color.fromRGBO(234, 239, 243, 1),
+    //   ),
+    // );
 
     return Scaffold(
         body: Container(
@@ -103,7 +103,9 @@ class _MyOtpState extends State<MyOtp> {
               height: 36,
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'setPassword');
+                },
                 // ignore: sort_child_properties_last
                 child: const Text('Next'),
                 style: ElevatedButton.styleFrom(
