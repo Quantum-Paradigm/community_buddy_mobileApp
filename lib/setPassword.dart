@@ -140,13 +140,13 @@ class _MySetPasswordState extends State<MySetPassword> {
             ),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, 'Back');
+                Navigator.pushNamed(context, 'signUp');
               },
               style: ButtonStyle(
                 foregroundColor: MaterialStateProperty.all<Color>(
                     const Color.fromARGB(255, 130, 27, 87)),
               ),
-              child: const Text('Sign Up'),
+              child: const Text('Back'),
             ),
           ],
         ),
