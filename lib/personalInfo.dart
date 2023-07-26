@@ -12,13 +12,6 @@ class _MyPersonalInfoState extends State<MyPersonalInfo> {
   TextEditingController countryCode = TextEditingController();
 
   @override
-  void initState() {
-    // TODO: implement initState
-    countryCode.text = "+92";
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
