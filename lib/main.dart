@@ -1,4 +1,6 @@
 import 'package:community_buddy/otp.dart';
+import 'package:community_buddy/personalInfo.dart';
+import 'package:community_buddy/projectInfo.dart';
 import 'package:community_buddy/setPassword.dart';
 import 'package:community_buddy/signIn.dart';
 import 'package:community_buddy/signUp.dart';
@@ -12,7 +14,9 @@ void main() {
       'signIn': (context) => const MySignIn(),
       'signUp': (context) => const MySignUp(),
       'otp': (context) => const MyOtp(),
-      'setPassword': (context) => const MySetPassword()
+      'setPassword': (context) => const MySetPassword(),
+      'personalInfo': (context) => const MyPersonalInfo(),
+      'projectInfo': (context) => const MyProjectInfo()
     },
   ));
 }
