@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 class MySignIn extends StatefulWidget {
   const MySignIn({super.key});
@@ -71,38 +72,56 @@ class _MySignInState extends State<MySignIn> {
             const SizedBox(
               height: 10,
             ),
+            // Container(
+            //   height: 55,
+            //   decoration: BoxDecoration(
+            //       border: Border.all(width: 1, color: Colors.grey),
+            //       borderRadius: BorderRadius.circular(8)),
+            //   child: Row(children: [
+            //     const SizedBox(
+            //       width: 10,
+            //     ),
+            //     SizedBox(
+            //       width: 40,
+            //       child: TextField(
+            //         controller: countryCode,
+            //         decoration: const InputDecoration(border: InputBorder.none),
+            //       ),
+            //     ),
+            //     const SizedBox(
+            //       width: 10,
+            //     ),
+            //     const Text(
+            //       "|",
+            //       style: TextStyle(fontSize: 33, color: Colors.grey),
+            //     ),
+            //     const SizedBox(
+            //       width: 10,
+            //     ),
+            //     const Expanded(
+            //         child: TextField(
+            //       decoration: InputDecoration(
+            //           border: InputBorder.none, hintText: '333 XXX XXXX'),
+            //     ))
+            //   ]),
+            // ),
             Container(
+              padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
               height: 55,
               decoration: BoxDecoration(
                   border: Border.all(width: 1, color: Colors.grey),
                   borderRadius: BorderRadius.circular(8)),
-              child: Row(children: [
-                const SizedBox(
-                  width: 10,
-                ),
-                SizedBox(
-                  width: 40,
-                  child: TextField(
-                    controller: countryCode,
-                    decoration: const InputDecoration(border: InputBorder.none),
-                  ),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Text(
-                  "|",
-                  style: TextStyle(fontSize: 33, color: Colors.grey),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Expanded(
-                    child: TextField(
-                  decoration: InputDecoration(
-                      border: InputBorder.none, hintText: '333 XXX XXXX'),
-                ))
-              ]),
+              child: InternationalPhoneNumberInput(
+                onInputChanged: (value) {},
+                ignoreBlank: false,
+                autoValidateMode: AutovalidateMode.disabled,
+                selectorTextStyle: const TextStyle(color: Colors.black),
+                formatInput: false,
+                hintText: '333 XXX XXXX',
+                inputBorder: InputBorder.none,
+                selectorConfig: const SelectorConfig(
+                    selectorType: PhoneInputSelectorType.BOTTOM_SHEET),
+              ),
             ),
             const SizedBox(
               height: 10,
