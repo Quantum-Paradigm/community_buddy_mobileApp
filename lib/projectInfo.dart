@@ -33,7 +33,7 @@ class _MyProjectInfoState extends State<MyProjectInfo> {
               height: 15,
             ),
             const Text(
-              'Peroject Info',
+              'Project Info',
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.w500,
