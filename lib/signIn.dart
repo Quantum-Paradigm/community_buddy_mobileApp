@@ -116,7 +116,7 @@ class _MySignInState extends State<MySignIn> {
                 ignoreBlank: false,
                 autoValidateMode: AutovalidateMode.disabled,
                 selectorTextStyle: const TextStyle(color: Colors.black),
-                formatInput: false,
+                // formatInput: false,
                 hintText: '333 XXX XXXX',
                 inputBorder: InputBorder.none,
                 selectorConfig: const SelectorConfig(
