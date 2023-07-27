@@ -24,6 +24,9 @@ class _MyProjectInfoState extends State<MyProjectInfo> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(
+              height: 50,
+            ),
             Image.asset(
               'images/bootstrap-logo-shadow.png',
               height: 70,
@@ -310,6 +313,9 @@ class _MyProjectInfoState extends State<MyProjectInfo> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4))),
               ),
+            ),
+            const SizedBox(
+              height: 20,
             ),
           ],
         ),
