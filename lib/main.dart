@@ -1,3 +1,4 @@
+import 'package:community_buddy/home.dart';
 import 'package:community_buddy/otp.dart';
 import 'package:community_buddy/personalInfo.dart';
 import 'package:community_buddy/projectInfo.dart';
@@ -16,7 +17,8 @@ void main() {
       'otp': (context) => const MyOtp(),
       'setPassword': (context) => const MySetPassword(),
       'personalInfo': (context) => const MyPersonalInfo(),
-      'projectInfo': (context) => const MyProjectInfo()
+      'projectInfo': (context) => const MyProjectInfo(),
+      'home': (context) => const MyHome(),
     },
   ));
 }
