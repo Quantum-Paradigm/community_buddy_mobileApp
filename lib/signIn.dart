@@ -181,7 +181,9 @@ class _MySignInState extends State<MySignIn> {
               height: 36,
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'home');
+                },
                 // ignore: sort_child_properties_last
                 child: const Text('Continue'),
                 style: ElevatedButton.styleFrom(
