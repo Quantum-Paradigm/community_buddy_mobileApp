@@ -39,6 +39,7 @@ dependencies:
   countries_flag: ^1.0.0
   google_nav_bar: ^5.0.6
   d_chart: ^2.3.0
+  syncfusion_flutter_charts: ^22.1.39
 
 dev_dependencies:
   flutter_test:
