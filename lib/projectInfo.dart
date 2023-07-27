@@ -128,41 +128,41 @@ class _MyProjectInfoState extends State<MyProjectInfo> {
                     items: const [
                       DropdownMenuItem(
                         value: "-1",
-                        child: Text("-Select City"),
+                        child: Text(" Select City          "),
                       ),
                       DropdownMenuItem(
                         value: "-2",
-                        child: Text("Karachi"),
+                        child: Text(" Karachi"),
                       ),
                       DropdownMenuItem(
                         value: "-3",
-                        child: Text("Hyderabad"),
+                        child: Text(" Hyderabad"),
                       ),
                       DropdownMenuItem(
                         value: "-4",
-                        child: Text("Sukkur"),
+                        child: Text(" Sukkur"),
                       ),
                       DropdownMenuItem(
                         value: "-5",
-                        child: Text("Lahore"),
+                        child: Text(" Lahore"),
                       ),
                       DropdownMenuItem(
                         value: "-6",
-                        child: Text("Islamabad"),
+                        child: Text(" Islamabad"),
                       ),
                       DropdownMenuItem(
                         value: "-7",
-                        child: Text("Peshawar"),
+                        child: Text(" Peshawar"),
                       ),
                       DropdownMenuItem(
                         value: "-8",
-                        child: Text("Mardan"),
+                        child: Text(" Mardan"),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(
-                  width: 83,
+                  width: 43,
                 ),
                 Container(
                   height: 55,
@@ -178,23 +178,23 @@ class _MyProjectInfoState extends State<MyProjectInfo> {
                     items: const [
                       DropdownMenuItem(
                         value: "-1",
-                        child: Text("Province"),
+                        child: Text(" Select Province       "),
                       ),
                       DropdownMenuItem(
                         value: "-2",
-                        child: Text("Sindh"),
+                        child: Text(" Sindh"),
                       ),
                       DropdownMenuItem(
                         value: "-3",
-                        child: Text("Punjab"),
+                        child: Text(" Punjab"),
                       ),
                       DropdownMenuItem(
                         value: "-4",
-                        child: Text("Balochistan"),
+                        child: Text(" Balochistan"),
                       ),
                       DropdownMenuItem(
                         value: "-5",
-                        child: Text("KPK"),
+                        child: Text(" KPK"),
                       ),
                     ],
                   ),
