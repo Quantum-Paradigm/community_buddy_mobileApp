@@ -10,6 +10,8 @@ class MyProjectInfo extends StatefulWidget {
 
 class _MyProjectInfoState extends State<MyProjectInfo> {
   bool? isChecked = false;
+  var _city = "-1";
+  var _province = "-1";
 
   @override
   Widget build(BuildContext context) {
@@ -83,6 +85,124 @@ class _MyProjectInfoState extends State<MyProjectInfo> {
             ),
             const SizedBox(
               height: 20,
+            ),
+            const Row(
+              children: [
+                Text(
+                  'City *',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                SizedBox(
+                  width: 150,
+                ),
+                Text(
+                  'Province *',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                      border: Border.all(width: 1, color: Colors.grey),
+                      borderRadius: BorderRadius.circular(8)),
+                  child: DropdownButton(
+                    value: _city,
+                    onChanged: (v) {
+                      _city = v!;
+                      setState(() {});
+                    },
+                    items: const [
+                      DropdownMenuItem(
+                        value: "-1",
+                        child: Text("-Select City"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-2",
+                        child: Text("Karachi"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-3",
+                        child: Text("Hyderabad"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-4",
+                        child: Text("Sukkur"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-5",
+                        child: Text("Lahore"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-6",
+                        child: Text("Islamabad"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-7",
+                        child: Text("Peshawar"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-8",
+                        child: Text("Mardan"),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  width: 83,
+                ),
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                      border: Border.all(width: 1, color: Colors.grey),
+                      borderRadius: BorderRadius.circular(8)),
+                  child: DropdownButton(
+                    value: _province,
+                    onChanged: (v) {
+                      _province = v!;
+                      setState(() {});
+                    },
+                    items: const [
+                      DropdownMenuItem(
+                        value: "-1",
+                        child: Text("Province"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-2",
+                        child: Text("Sindh"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-3",
+                        child: Text("Punjab"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-4",
+                        child: Text("Balochistan"),
+                      ),
+                      DropdownMenuItem(
+                        value: "-5",
+                        child: Text("KPK"),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+            const SizedBox(
+              height: 10,
             ),
             const Row(
               children: [
