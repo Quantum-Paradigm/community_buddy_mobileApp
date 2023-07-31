@@ -88,10 +88,9 @@ class _MyHomeState extends State<MyHome> {
                       //   return pieData['domain'];
                       // }
                     ),
-                    Center(
-                      child: Container(
-                        margin: const EdgeInsets.fromLTRB(0, 90, 0, 0),
-                        child: const Column(
+                    const Center(
+                      child: FittedBox(
+                        child: Column(
                           children: [
                             Center(child: Text('25,000 PKR')),
                             Center(child: Text('of 100,000 PKR')),
