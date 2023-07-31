@@ -304,7 +304,7 @@ class _MyProjectInfoState extends State<MyProjectInfo> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, 'projectInfo');
+                  Navigator.pushNamed(context, 'home');
                 },
                 // ignore: sort_child_properties_last
                 child: const Text('Continue'),
