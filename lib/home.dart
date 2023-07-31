@@ -16,6 +16,9 @@ class _MyHomeState extends State<MyHome> {
       backgroundColor: Colors.white,
       bottomNavigationBar: const GNav(
         gap: 8,
+        activeColor: Colors.purple,
+        // tab button hover color
+        haptic: true, // haptic feedback
         tabs: [
           GButton(
             icon: Icons.home,
