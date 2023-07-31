@@ -1,10 +1,10 @@
 import 'package:community_buddy/home.dart';
-import 'package:community_buddy/otp.dart';
-import 'package:community_buddy/personalInfo.dart';
-import 'package:community_buddy/projectInfo.dart';
-import 'package:community_buddy/setPassword.dart';
-import 'package:community_buddy/signIn.dart';
-import 'package:community_buddy/signUp.dart';
+import 'package:community_buddy/Onboarding/otp.dart';
+import 'package:community_buddy/Onboarding/personalInfo.dart';
+import 'package:community_buddy/Onboarding/projectInfo.dart';
+import 'package:community_buddy/Onboarding/setPassword.dart';
+import 'package:community_buddy/Onboarding/signIn.dart';
+import 'package:community_buddy/Onboarding/signUp.dart';
 import 'package:flutter/material.dart';
 
 void main() {
