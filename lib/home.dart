@@ -13,6 +13,7 @@ class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       bottomNavigationBar: const GNav(
         gap: 8,
         tabs: [
@@ -45,8 +46,19 @@ class _MyHomeState extends State<MyHome> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const Row(
+                children: [
+                  Text(
+                    'Overview',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
               AspectRatio(
-                aspectRatio: 14 / 9,
+                aspectRatio: 14.7 / 9,
                 child: Stack(
                   children: [
                     DChartPie(
@@ -78,8 +90,8 @@ class _MyHomeState extends State<MyHome> {
                     ),
                     Center(
                       child: Container(
-                        margin: EdgeInsets.fromLTRB(0, 90, 0, 0),
-                        child: Column(
+                        margin: const EdgeInsets.fromLTRB(0, 90, 0, 0),
+                        child: const Column(
                           children: [
                             Center(child: Text('25,000 PKR')),
                             Center(child: Text('of 100,000 PKR')),
@@ -88,12 +100,187 @@ class _MyHomeState extends State<MyHome> {
                         ),
                       ),
                     )
-
-                    //  collected this month
                   ],
                 ),
               ),
-            ],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(4))),
+                    child: const Text('Defaulters: 55/100'),
+                  ),
+                  const SizedBox(
+                    width: 30,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor:
+                            const Color.fromRGBO(137, 10, 165, 0.612),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(4))),
+                    child: const Text('Send Alerts'),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Divider(
+                color: Colors.grey[400],
+              ),
+              Stack(children: [
+                const Row(
+                  children: [
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Text(
+                      'Announcements',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    TextButton(
+                      onPressed: () {},
+                      style: ButtonStyle(
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.black),
+                      ),
+                      child: const Text(
+                        'View All',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ]),
+              Container(
+                  height: 60,
+                  // color: Colors.greenAccent,
+                  padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                  decoration: BoxDecoration(
+                      color: Colors.greenAccent,
+                      borderRadius: BorderRadius.circular(8)),
+                  child: const Stack(
+                    children: [
+                      Row(children: [
+                        Text('Shortage of water expected at blo.....'),
+                      ]),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            '26 July',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                          )
+                        ],
+                      ),
+                    ],
+                  )),
+              const SizedBox(
+                height: 20,
+              ),
+              Stack(children: [
+                const Row(
+                  children: [
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Text(
+                      'Transactions',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    TextButton(
+                      onPressed: () {},
+                      style: ButtonStyle(
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.black),
+                      ),
+                      child: const Text(
+                        '+Add Income',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ]),
+              Container(
+                height: 100,
+                // color: Colors.greenAccent,
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                decoration: BoxDecoration(
+                    color: Colors.blueGrey[200],
+                    borderRadius: BorderRadius.circular(8)),
+                child: const Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          '15 June 2023',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Stack(
+                      children: [
+                        Row(children: [
+                          Text(
+                            'Billboard',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                          ),
+                        ]),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Text(
+                              '50000',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 22),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          'Paid By: Name',
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+            ], // add children in column above this line
           ),
         ),
       ),
