@@ -95,7 +95,8 @@ class _MyHomeState extends State<MyHome> {
                             Center(
                                 child: Text(
                               '25,000 PKR',
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 20),
                             )),
                             Center(child: Text('of 100,000 PKR')),
                             Center(child: Text('collected this month')),
