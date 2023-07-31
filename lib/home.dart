@@ -168,7 +168,7 @@ class _MyHomeState extends State<MyHome> {
               Container(
                   height: 60,
                   // color: Colors.greenAccent,
-                  padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                  padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
                   decoration: BoxDecoration(
                       color: Colors.greenAccent,
                       borderRadius: BorderRadius.circular(8)),
@@ -226,7 +226,7 @@ class _MyHomeState extends State<MyHome> {
               Container(
                 height: 100,
                 // color: Colors.greenAccent,
-                padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
                 decoration: BoxDecoration(
                     color: Colors.blueGrey[200],
                     borderRadius: BorderRadius.circular(8)),
