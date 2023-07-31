@@ -31,6 +31,12 @@ class _MyHomeState extends State<MyHome> {
           ),
         ],
       ),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        foregroundColor: Colors.black,
+        leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+      ),
       body: Container(
         color: Colors.white,
         margin: const EdgeInsets.fromLTRB(25, 0, 25, 0),
