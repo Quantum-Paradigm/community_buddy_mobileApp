@@ -92,7 +92,11 @@ class _MyHomeState extends State<MyHome> {
                       child: FittedBox(
                         child: Column(
                           children: [
-                            Center(child: Text('25,000 PKR')),
+                            Center(
+                                child: Text(
+                              '25,000 PKR',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            )),
                             Center(child: Text('of 100,000 PKR')),
                             Center(child: Text('collected this month')),
                           ],
@@ -224,9 +228,9 @@ class _MyHomeState extends State<MyHome> {
                 ),
               ]),
               Container(
-                height: 100,
+                height: 110,
                 // color: Colors.greenAccent,
-                padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
                 decoration: BoxDecoration(
                     color: Colors.blueGrey[200],
                     borderRadius: BorderRadius.circular(8)),
